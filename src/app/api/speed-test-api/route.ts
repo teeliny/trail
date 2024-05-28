@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
       https: true,
       urlCount: 5,
       bufferSize: 8,
-      unit: FastSpeedtest.UNITS.Mbps,
+      unit: FastSpeedtest.UNITS.MBps,
     });
 
     const resp = await speedtest.getSpeed();
